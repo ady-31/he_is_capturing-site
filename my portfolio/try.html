@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- w3.css CDN -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- Google fonts api  -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- fork awesome CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <!-- font awesome CDN  -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    /> -->
+    <!-- CSS STYLE FILES -->
+    <link rel="stylesheet" type="text/css" href="w.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="script.js">
+
+    <title>photography Website </title>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-text-black" id="myNavbar">
+        <a
+          class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0);"
+          onclick="toggleFunction()"
+          title="Toggle Navigation Menu"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+        <a href="#home" class="w3-bar-item w3-hover-black w3-button">HOME</a>
+        <a href="#about" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-user"></i> ABOUT</a
+        >
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-th"></i> PORTFOLIO</a
+        >
+        <a href="#contact" class="w3-bar-item w3-button w3-hide-small"
+          ><i class="fa fa-envelope"></i> CONTACT</a
+        >
+      </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium"
+      >
+        <a
+          href="#about"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >ABOUT</a
+        >
+        <a
+          href="#portfolio"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >PORTFOLIO</a
+        >
+        <a
+          href="#contact"
+          class="w3-bar-item w3-button"
+          onclick="toggleFunction()"
+          >CONTACT</a
+        >
+      </div>
+    </div>
+
+    <!-- First Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+      <div class="w3-display-middle" style="white-space:nowrap;">
+        <span
+          class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity " id="city-life">
+    he_is_capturing
+        </span>
+      </div>
+    </div>
+
+    <!-- horizontal scrolling  -->
+    <h3 class="w3-center"id="portfolio">SCROLL THROUGH MY LATEST WORK</h3>
+    <div class="w-full d-flex flex-column align-items-center justify-content-center">
+        <div class="d-flex  w-100 px-5 py-5 justify-content-center" style="gap: 500px;">
+            <img src="pic1.jpg" onclick="onClick(this)" class="hover:opacity-75 " style="border-radius: 100%; height: 400px; width: 400px;" alt="Photos" />
+            <img src="pic2.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px; margin-top: 300px;" alt="Photos" />
+        </div>
+        <div class="d-flex  w-100 px-5 py-5 justify-content-center" style="gap: 500px;">
+            <img src="pic 3.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px;" alt="Photos" />
+            <img src="pic 13.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px; margin-top: 300px;" alt="Photos" />
+        </div>
+        <div class="d-flex  w-100 px-5 py-5 justify-content-center" style="gap: 500px;">
+            <img src="pic 12.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px;" alt="Photos" />
+            <img src="pic 6.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px; margin-top: 300px;" alt="Photos"/>
+        </div>
+        <div class="d-flex  w-100 px-5 py-5 justify-content-center" style="gap: 500px;">
+            <img src="view2.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px;" alt="Photos" />
+            <img src="image.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px; margin-top: 300px;" alt="Photos"/>
+        </div>
+        <div class="d-flex  w-100 px-5 py-5 justify-content-center" style="gap: 500px;">
+            <img src="pic 9.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px;" alt="Photos" />
+            <img src="pic 10.jpg" onclick="onClick(this)" class="w3-hover-opacity" style="border-radius: 100%; height: 400px; width: 400px; margin-top: 300px;" alt="Photos"/>
+        </div>
+    </div>
+    
+    
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+        <span class="w3-button w3-display-topright" title="Close Modal Image"
+          ><i class="fas fa-times"></i> Close</span
+        >
+        <div
+          class="w3-modal-content w3-animate-opacity w3-center w3-transparent "
+        >
+          <img id="img01" class="w3-image" />
+          <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min"id="about">
+      <div class="w3-display-middle">
+        <span class="w3-xxlarge w3-text-black w3-wide">ABOUT</span>
+        <span class="about-me-text">Welcome to <i>he_is_Capturing!</i>
+
+         Capturing moments, one frame at a time!
+          
+          Hello there! I'm aman, the eye behind the lens at HR_is_Capturing. Photography isn't just a hobby for me; it's a passion, a way of life, and a means to freeze moments that would otherwise slip away.</span>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+      <h3 class="w3-center">PHOTOGRAPY</h3>
+      <p class="w3-center"><em><b>I'd love to be your next client!!</b> </em></p>
+
+      <div class="w3-row w3-padding-32 w3-section">
+        <div class="w3-col m4 w3-container">
+          <img
+            src="j.png"
+            alt="mme pic"
+            class="w3-image w3-round"
+            style="width: 80%; height: 80%";
+          />
+        </div>
+        <div class="w3-col m8 w3-panel">
+          <div class="w3-large w3-margin-bottom">
+            <i class="fa fa-map-marker w3-text-white w3-hover-opacity" aria-hidden="true"></i>
+            New Delhi, Delhi, India<br />
+            <i class="fa fa-phone w3-text-white w3-hover-opacity" aria-hidden="true"></i>
+            Phone: xxxxxxxx<br />
+            <i class="fa fa-envelope w3-text-white w3-hover-opacity" aria-hidden="true"></i>
+            aman@gmail.com<br />
+          </div>
+          <p>
+            Do you need a photographer? <i class="fa fa-camera w3-text-white w3-hover-opacity" aria-hidden="true"></i>
+            <br />
+            Leave me a message below:
+          </p>
+          <form action="#home">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Name"
+                  required
+                  name="Name"
+                />
+              </div>
+              <div class="w3-half">
+                <input
+                  class="w3-input w3-border"
+                  type="text"
+                  placeholder="Email"
+                  required
+                  name="Email"
+                />
+              </div>
+            </div>
+            <input
+              class="w3-input w3-border"
+              type="text"
+              placeholder="Message"
+              required
+              name="Message"
+            />
+            <button class="w3-button w3-grey w3-right w3-section" type="submit">
+              <i class="fa fa-paper-plane"></i> SEND MESSAGE
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center">
+      <a href="#home" class="w3-button w3-grey"
+        ><i class="fa fa-arrow-up w3-margin-right"></i>Let's go back up
+      </a>
+      <div class="w3-xlarge w3-section">      
+        <a href="https://www.instagram.com/he_is_capturing"><i class="fa fa-instagram w3-text-white w3-hover-opacity" aria-hidden="true" style="margin-right: 5px;"></i></a>
+
+        <a href="https://in.pinterest.com/"><i class="fa fa-pinterest-p w3-text-red w3-hover-opacity" aria-hidden="true" style="margin-right: 5px;"></i></a>   
+
+        <a href="https://twitter.com/home/"><i class="fa fa-twitter w3-text-blue w3-hover-opacity" aria-hidden="true" style="margin-right: 5px;"></i></a>
+        
+        <a href="https://www.linkedin.com/in/amandeep2011/"><i class="fa fa-linkedin-square w3-text-blue w3-hover-opacity " aria-hidden="true" style="margin-right: 5px;"></i></a>
+        <a href="https://www.buymeacoffee.com/bvoid"><i class="fa fa-buymeacoffee w3-text-yellow w3-hover-opacity " aria-hidden="true" style="margin-right: 5px;"></i></a>
+      </div>
+      <p>
+        Voidity, LLC. All Rights Reserved  &copy; 2024<a
+          href="#"
+          title="Horizontal Img Scroll"
+          class="w3-hover-text-green"
+        >
+          </a
+        >
+      </p>
+    </footer>
+<!-- -----------------------------javascript Stats from here---------------------------- -->
+    <script>
+      // Modal Image Gallery
+      function onClick(element) {
+        document.getElementById("img01").src = element.src;
+        document.getElementById("modal01").style.display = "block";
+        var captionText = document.getElementById("caption");
+        captionText.innerHTML = element.alt;
+      }
+
+      // Change style of navbar on scroll
+      window.onscroll = function() {
+        myFunction();
+      };
+      function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          navbar.className =
+            "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+          navbar.className = navbar.className.replace(
+            " w3-card w3-animate-top w3-white",
+            ""
+          );
+        }
+      }
+
+      // Used to toggle the menu on small screens when clicking on the menu button
+      function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+      const imageContainer = document.querySelector('.image-container');
+
+  let scrollAmount = 0;
+  let isScrolling = false;
+
+  function scrollImages() {
+    scrollAmount += 1;
+    imageContainer.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+
+    if (imageContainer.scrollWidth - imageContainer.scrollLeft - imageContainer.clientWidth <= 1) {
+      scrollAmount = 0;
+    }
+
+    if (!isScrolling) {
+      isScrolling = true;
+      requestAnimationFrame(scrollImages);
+    }
+  }
+
+  scrollImages();
+
+  // Optional: Pause scrolling on hover
+  imageContainer.addEventListener('mouseover', () => {
+    isScrolling = false;
+  });
+
+  imageContainer.addEventListener('mouseout', () => {
+    isScrolling = true;
+    scrollImages();
+  });
+    </script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+
+  </body>
+</html>
